@@ -36,6 +36,8 @@ counts = [ 0, 3, 10, 4, 1, 7, 6, 1]
 from itertools import compress
 
 more5 = [ n > 5 for n in counts ]
+
+# a contain only the item for which more5 are True
 a = list(compress(addresses, more5))
 print(a)
 
